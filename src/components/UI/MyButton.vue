@@ -1,8 +1,7 @@
 <template>
   <button 
     :type="buttonType"
-    :projectItem="projectItem"
-    :class="[projectItem ? orangeTheme : blueTheme]"
+    class="button"
   >
     <slot></slot>
   </button>
@@ -13,10 +12,6 @@ export default {
   props: {
     buttonType: {
       type: String,
-      default: null,
-    },
-    projectItem: {
-      type: Boolean,
       default: null,
     },
   },
@@ -34,7 +29,9 @@ export default {
     padding: 15px 30px;
     border: 0;
     outline: none;
+    cursor: pointer;
     border-radius: 20px;
+    background: #223146;
 
     color: #F4F5EF;
     font-size: 22px;
@@ -42,16 +39,8 @@ export default {
     transition: all ease-in .7s;
   }
 
-  .button_theme_blue {
-    background: #223146;
-  }
-
-  .button_theme_orange {
-    background: #F28E14;
-  }
-
   .button:hover {
-    opacity: .6;
+    opacity: .8;
     transform: translateY(-3px);
   }
 </style>

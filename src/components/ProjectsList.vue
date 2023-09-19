@@ -30,6 +30,7 @@ export default {
 
     display: grid;
     grid-template-columns: repeat(4, 250px);
-    column-gap: 70px
+    column-gap: 70px;
+    row-gap: 40px;
   }
 </style>

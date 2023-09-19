@@ -49,10 +49,9 @@ export default {
 
   .item__img {
     width: 220px;
-    height: 120px;
+    height: 80px;
     border-radius: 10px;
     object-fit: cover;
-    object-position: top;
   }
 
   .item__desc {

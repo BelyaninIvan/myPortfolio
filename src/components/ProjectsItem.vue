@@ -29,12 +29,13 @@ export default {
   .item {
     margin: 0;
     padding: 10px 15px;
+    min-height: 400px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     row-gap: 15px;
-
+    box-sizing: border-box;
     border-radius: 40px;
     background: #223146;
   }
@@ -56,10 +57,13 @@ export default {
 
   .item__desc {
     margin: 0;
+    min-height: 120px;
     color: #F4F5EF;
     text-align: center;
     font-size: 20px;
     font-weight: 400;
+    display: flex;
+    align-items: center;
   }
 
 </style>

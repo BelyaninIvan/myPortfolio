@@ -8,7 +8,7 @@
     >
       Посмотреть
     </MyLinkBtn>
-    <MyLinkBtn
+    <MyLinkBtn v-show="projectsItem.codeLink != ''"
       :addr="projectsItem.codeLink"
     >
       Изучить код

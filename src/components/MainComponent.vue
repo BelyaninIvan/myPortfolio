@@ -41,6 +41,7 @@ export default {
   data() {
     return {
       projects: [
+        
         {
             id: '1',
             name: 'Светофор',
